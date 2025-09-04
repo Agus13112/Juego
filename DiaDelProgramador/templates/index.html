@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Coordenadas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🌍 Coordenadas:</h2>
+            <p>: {{lat_g}}{{lat_m}}{{lat_s}}{{lon_g}}{{lon_m}}{{lon_s}}</p>
+        <form method="post">
+            <button type="submit">🔄 Cambiar coordenadas</button>
+        </form>
+    </div>
+</body>
+</html>
